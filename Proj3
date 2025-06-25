@@ -1,0 +1,29 @@
+//addition two arrays to create third array with 5 elements each array
+
+import java.util.*;
+
+public class Proj3 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the array length:");
+        int n = s.nextInt();
+        int[] arr1 = new int[n];
+        int[] arr2 = new int[n];
+        int[] arr3 = new int[n];
+        System.out.println("Enter the elements of first array:");
+        for(int i=0; i<n; i++) {
+            arr1[i] = s.nextInt();
+        }
+        System.out.println("Enter the elements of second array:");
+        for(int j=0; j<n; j++) {
+            arr2[j] = s.nextInt();
+        }
+        for(int k=0; k<n; k++) {
+            arr3[k] = arr1[k] + arr2[k];
+        }
+        System.out.print("The third array is : ");
+        for(int l=0; l<n; l++) {
+            System.out.print(arr3[l]+" ");
+        }
+    }    
+}
